@@ -233,7 +233,7 @@ header {
 }
 
 #menu>li.active>a {
-    text-decoration: none;
+    text-decoration: none;	
 }
 
 .submenu_1 {
@@ -395,7 +395,7 @@ header {
 }
 
 .color4 {
-    color: #ff6c00;
+    color: #4A7DBC;
 }
 
 ._link1 {
@@ -415,7 +415,7 @@ header {
 }
 
 ._link2:hover {
-    color: #ff6c00;
+    color: #4A7DBC;
     text-decoration: underline;
 }
 
@@ -425,7 +425,7 @@ header {
 }
 
 ._link3:hover {
-    color: #ff6c00;
+    color: #4A7DBC;
     text-decoration: underline;
 }
 
@@ -509,7 +509,7 @@ header {
 }
 
 .shuttle:hover {
-    background: #ff6c00;
+    background: #4A7DBC;
 }
 
 ._up-btn {

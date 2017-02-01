@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="css/jquery.fancybox-1.3.4.css" type="text/css" media="all">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600,300' rel='stylesheet' type='text/css">
     <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <!--<script src="js/googleMap.js"></script>-->
     <script type="text/javascript" src="js/scripts.js"></script>
+
     <!--[if lt IE 9]>
   	<script type="text/javascript" src="js/html5.js"></script>
     <link rel="stylesheet" href="css/ie.css" type="text/css" media="all">
@@ -124,7 +127,7 @@
                                         </figure>
                                         <div class="col2">
                                             <p>
-                                                Я программист. Пишу только качественный код и получаю от этого удовольствие. Всегда открыт для интересных предложений. 
+                                                Я программист. Пишу только качественный код и получаю от этого удовольствие. Всегда открыт для интересных предложений.
                                             </p>
                                         </div>
                                     </div>
@@ -157,33 +160,27 @@
                                 </div>
 
                                 <div class="containerContent">
-                                    <h2>What We Can Do</h2>
+                                    <h2>Что я умею</h2>
                                     <div class="col1 padBot3">
                                         <div class="col4 magRight2">
-                                            <h3><a class="_link3" href="#">Website Designing</a></h3>
-                                            <p>Duis autem vel eum iriure dolor in hen drerit in vulputate velit esse molestie
-                                                consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
-                                                et iusto odio dignissim qui blandit.</p>
+                                            <h3><a class="_link3" href="#">Веб-сайты</a></h3>
+                                            <p>Обычные веб сайты. Под все браузеры и устройства.</p>
                                         </div>
                                         <div class="col4">
-                                            <h3><a class="_link3" href="#">Reputation Management</a></h3>
-                                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                                tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-                                                At vero eos et accusam et justo duo.</p>
+                                            <h3><a class="_link3" href="#">Веб-приложения</a></h3>
+                                            <p>Сложные приложения с многоуровневой архитектурой. Принципиально новые приложения,
+                                                интернет-магазины, системы управления.</p>
                                         </div>
                                     </div>
                                     <div class="col1">
                                         <div class="col4 magRight2">
-                                            <h3><a class="_link3" href="#">Flash Development</a></h3>
-                                            <p>Paesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem
-                                                ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy euismod
-                                                tincidunt ut laoreet.</p>
+                                            <h3><a class="_link3" href="#">Landing page</a></h3>
+                                            <p>Создание продающих посадочных сраниц. Структура, дизайн, A/B тестирование.</p>
                                         </div>
                                         <div class="col4">
-                                            <h3><a class="_link3" href="#">3D Modeling and Animation</a></h3>
-                                            <p>Dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                                                ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-                                                sed diam.</p>
+                                            <h3><a class="_link3" href="#">CRM системы</a></h3>
+                                            <p>Системы упраления персоналом, продажами, адаптированные для конкретного бизнеса.
+                                                Подключение телефоний, сервисов рассылок, интернет магазинов, 1c бухгалтерии.</p>
                                         </div>
                                     </div>
 
@@ -194,7 +191,7 @@
                         <li id="pageGallery">
                         </li>
 
-                        <li id="pagePrivacy">
+                        <!--<li id="pagePrivacy">
                             <div class="box">
                                 <div class="closePlane">
                                     <a class="closeButton" href="#!/pageGallery"><img src="images/closeIcon.png" alt=""></a>
@@ -230,7 +227,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </li>
+                        </li>-->
 
                         <li id="pageContact">
                             <div class="box">
@@ -282,71 +279,85 @@
                                     <div class="col5">
                                         <h2>Contacts</h2>
                                         <div class="padBot5">
-                                            <figure class="google_map"></figure>
-                                        </div>
-                                        <div class="col5">
-                                            <p>
-                                                <span>8901 Marmora Road,<br>Glasgow, D04 89GR.</span><br>
-                                                <span class="space1">Telephone:</span>+1 800 603 6035<br>
-                                                <span>E-mail:&nbsp;<a class="_link1" href="mailto:">mail@demolink.org</a></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+                                            <div id="ymaps" style="width: 300px; height: 200px;"></div>
+</div>
+<div class="col5">
+    <p>
+        <span>улица Байзакова, 280,<br>Алматы, Казахстан</span><br>
+        <span class="space1">Телефон:</span>+7 771 852 14 79<br>
+        <span>E-mail:&nbsp;<a class="_link1" href="mailto:daniilborowkow@yandex.ru">daniilborowkow@yandex.ru</a></span>
+    </p>
+</div>
+</div>
+</div>
+</div>
+</li>
 
-                        <li id="pageMore">
-                            <div class="box">
-                                <div class="closePlane">
-                                    <a class="closeButton" href="#!/pageGallery"><img src="images/closeIcon.png" alt=""></a>
-                                </div>
-                                <div class="containerContent">
-                                    <h2>Lorem Ipsum</h2>
-                                    <div class="col1">
-                                        <div class="Btns2">
-                                            <a href="#" class="upBtn"></a>
-                                            <a href="#" class="downBtn"></a>
-                                        </div>
-                                        <div class="scroll2">
+<li id="pageMore">
+    <div class="box">
+        <div class="closePlane">
+            <a class="closeButton" href="#!/pageGallery"><img src="images/closeIcon.png" alt=""></a>
+        </div>
+        <div class="containerContent">
+            <h2>Lorem Ipsum</h2>
+            <div class="col1">
+                <div class="Btns2">
+                    <a href="#" class="upBtn"></a>
+                    <a href="#" class="downBtn"></a>
+                </div>
+                <div class="scroll2">
 
-                                            <p class="padBot4">Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                                                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                                                et justo duo dolores et ea rebum stet clita kasd gubergren, no sea takimata
-                                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                                magna aliquyam erat, sed diam voluptua.</p>
-                                            <p class="padBot4">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-                                                no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
-                                                sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                                                ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                                accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
-                                                takimata sanctus. Duis autem vel eum iriure dolor in hendrerit.</p>
-                                            <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-                                                et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                                                et justo duo dolores et ea rebum stet clita kasd gubergren, no sea takimata
-                                                sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-                                                sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
-                                                magna aliquyam erat, sed diam voluptua.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </article>
-                <!--content end-->
-                <!--footer -->
-                <!--footer end-->
+                    <p class="padBot4">Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd
+                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua.</p>
+                    <p class="padBot4">At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
+                        est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+                        eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus.
+                        Duis autem vel eum iriure dolor in hendrerit.</p>
+                    <p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum stet clita kasd
+                        gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua.</p>
+                </div>
             </div>
         </div>
     </div>
-    <script>
-        $(window).load(function () {
-            $('.page_spinner').fadeOut();
-            $('body').css({ overflow: 'auto', 'min-height': '800px' })
-        })
-    </script>
+</li>
+</ul>
+</article>
+<!--content end-->
+<!--footer -->
+<!--footer end-->
+</div>
+</div>
+</div>
+<script>
+    $(window).load(function () {
+        $('.page_spinner').fadeOut();
+        $('body').css({ overflow: 'auto', 'min-height': '800px' })
+    })
+</script>
+
+<script>
+    ymaps.ready(init);
+    var myMap;
+    var myPlacemark;
+
+    function init() {
+        myMap = new ymaps.Map("ymaps", {
+            center: [43.236893, 76.915401],
+            zoom: 14
+        });
+        myPlacemark = new ymaps.Placemark([43.236893, 76.915401], { hintContent: 'я тут', balloonContent: 'сижу в коворкинге' });
+
+        // myMap.getObjects.add(myPlacemark);
+        myMap.geoObjects.add(myPlacemark);
+    }
+</script>
 </body>
 
 </html>

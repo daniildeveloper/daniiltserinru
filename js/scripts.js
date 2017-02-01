@@ -12,7 +12,6 @@ include('js/cScroll.js');
 include('js/forms.js');
 include('js/jquery.fancybox-1.3.4.pack.js');
 include('js/gallery.js');
-include('js/googleMap.js');
 
 //----Include-Function----
 function include(url){ 
@@ -96,7 +95,7 @@ $("#img_slider").gallerySplash();
        
      $('._list1 > li > a').hover(
      function(){ 
-        $(this).stop(true).animate({'margin-left':'25px',color:'#ff6c00'},300);
+        $(this).stop(true).animate({'margin-left':'25px',color:'#4A7DBC'},300);
         },
       function(){
          $(this).stop(true).animate({'margin-left':'15px',color:'#fff'},300);
@@ -106,7 +105,7 @@ $("#img_slider").gallerySplash();
         
             $('.submenu_1 > li > a').hover(
      function(){ 
-        $(this).stop(true).animate({'margin-left':'10px',color:'#ff6c00'},300);
+        $(this).stop(true).animate({'margin-left':'10px',color:'#4A7DBC'},300);
         },
       function(){
          $(this).stop(true).animate({'margin-left':'0px',color:'#313131'},300);
@@ -189,7 +188,7 @@ $('body').mousemove(function(){
           //  defHash: '#!/pageGallery',
              hoverIn:function(li){
                 //$(".overPlane", li).stop(true).animate({bottom:'0px'},800,'easeOutCubic');
-                $(".mText", li).stop(true).animate({color:'#ff6c00'},500,'easeOutExpo');
+                $(".mText", li).stop(true).animate({color:'#4A7DBC'},500,'easeOutExpo');
                
                  /*   if(($.browser.msie) && ($.browser.version <= 8)){}else{
                         $(".pic", li).stop(true).animate({scale:1.1},300,'easeOutSine').animate({top:"0px"},400,'easeOutExpo');
