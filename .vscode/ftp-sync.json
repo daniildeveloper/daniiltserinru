@@ -1,0 +1,19 @@
+{
+    "remotePath": "/public_html",
+    "host": "vh27604.hv4.ru",
+    "username": "vh27604",
+    "password": "41024910Daniil",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ]
+}
